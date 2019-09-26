@@ -8,8 +8,7 @@ const userRoutes = require("./routes/user");
 
 const app = express();
 
-mongoose
-  .connect(
+mongoose.connect(
     process.env.MONGO_URI,
     { useUnifiedTopology: true, useCreateIndex: true, useNewUrlParser: true },
   )
