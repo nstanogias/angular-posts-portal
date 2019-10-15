@@ -10,7 +10,7 @@ const app = express();
 
 mongoose.connect(
     process.env.MONGO_URI,
-    { useUnifiedTopology: true, useCreateIndex: true, useNewUrlParser: true },
+    { useUnifiedTopology: true  , useCreateIndex: true, useNewUrlParser: true },
   )
   .then(() => {
     console.log("Connected to database!");
